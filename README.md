@@ -7,5 +7,18 @@
 ![image](https://winofsql.jp/image/a/filezilla-install-settings-2.png)\
 ![image](https://winofsql.jp/image/a/filezilla-install-settings-3.png)
 
+## .htaccess( [index.zip](https://webapp.chips.jp/download/index.zip) )
+```
+DirectoryIndex index.php
+Options +Indexes
+DirectoryIndex /index/files.php
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
+RewriteRule ^ http://%1%{REQUEST_URI} [L,R=301]
+```
+
 ## ロリポップ Python バージョン
 ![image](https://user-images.githubusercontent.com/1501327/164386514-e96deace-d0c8-40a3-b1fb-2581920508ee.png)
