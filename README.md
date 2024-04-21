@@ -20,5 +20,3 @@ RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
 RewriteRule ^ http://%1%{REQUEST_URI} [L,R=301]
 ```
 
-## ロリポップ Python バージョン
-![image](https://user-images.githubusercontent.com/1501327/164386514-e96deace-d0c8-40a3-b1fb-2581920508ee.png)
