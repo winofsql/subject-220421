@@ -7,7 +7,7 @@
 ![image](https://winofsql.jp/image/a/filezilla-install-settings-2.png)\
 ![image](https://winofsql.jp/image/a/filezilla-install-settings-3.png)
 
-## .htaccess( [index.zip](https://webapp.chips.jp/download/index.zip) )
+## .htaccess
 ```
 DirectoryIndex index.php
 Options +Indexes
